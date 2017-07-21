@@ -1,5 +1,5 @@
-@include font-face("Source Code Pro", "../fonts/SourceCodePro-Regular", regular, ttf otf woff);
-@include font-face("Source Code Pro", "../fonts/SourceCodePro-Bold", bold, ttf otf woff);
+@include font-face("Source Code Pro", "../fonts/SourceCodePro-Regular", regular, ttf otf);
+@include font-face("Source Code Pro", "../fonts/SourceCodePro-Bold", bold, ttf otf);
 
 .code {
   font-family: "Source Code Pro", serif;

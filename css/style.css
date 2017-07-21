@@ -243,7 +243,7 @@ body {
 header.masthead {
   position: relative;
   width: 100%;
-  min-height: auto;
+  min-height: 100vh;
   text-align: center;
   color: white;
 }
@@ -319,7 +319,7 @@ header.masthead .header-content .header-content-inner a {
   /* line 2, ../scss/_masthead.scss */
   header.masthead {
     height: 100%;
-    min-height: 600px;
+    min-height: 100vh;
   }
   /* line 66, ../scss/_masthead.scss */
   header.masthead .header-content {
@@ -357,15 +357,35 @@ header.masthead .header-content .header-content-inner a {
   background-position: center;
 }
 
+/* line 7, ../scss/_venue.scss */
+.google-maps {
+  position: relative;
+  padding-bottom: 40%;
+  height: 0;
+  overflow: hidden;
+  max-width: 600px;
+  max-height: 450px;
+  margin: 0 auto;
+}
+
+/* line 16, ../scss/_venue.scss */
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
 @font-face {
   font-family: "Source Code Pro";
-  font-style: ttf otf woff;
+  font-style: ttf otf;
   font-weight: regular;
   src: url("../fonts/SourceCodePro-Regular.eot?") format("eot"), url("../fonts/SourceCodePro-Regular.woff2") format("woff2"), url("../fonts/SourceCodePro-Regular.woff") format("woff"), url("../fonts/SourceCodePro-Regular.ttf") format("truetype"), url("../fonts/SourceCodePro-Regular.svg#Source_Code_Pro") format("svg");
 }
 @font-face {
   font-family: "Source Code Pro";
-  font-style: ttf otf woff;
+  font-style: ttf otf;
   font-weight: bold;
   src: url("../fonts/SourceCodePro-Bold.eot?") format("eot"), url("../fonts/SourceCodePro-Bold.woff2") format("woff2"), url("../fonts/SourceCodePro-Bold.woff") format("woff"), url("../fonts/SourceCodePro-Bold.ttf") format("truetype"), url("../fonts/SourceCodePro-Bold.svg#Source_Code_Pro") format("svg");
 }
