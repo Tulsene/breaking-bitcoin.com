@@ -43,52 +43,54 @@ $parallax-ios         : true !default;
   z-index: $distance * 1000;
 }
 
-//@include parallax-init;
+@-moz-document url-prefix() {
+  @include parallax-init;
+}
 
-//.parallax {
-//  perspective: 1px;
-//  height: 100vh;
-//  overflow-x: hidden;
-//  overflow-y: scroll;
-//}
-//.parallax__layer {
-//  position: absolute;
-//  top: 0;
-//  right: 0;
-//  bottom: 0;
-//  left: 0;
-//}
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 
-//.parallax__group {
-//  position: relative;
-//  //height: 100vh;
-//  transform-style: preserve-3d;
-//  -webkit-transform-style: preserve-3d;
-//}
+.parallax__group {
+  position: relative;
+  //height: 100vh;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
 section {
   position: relative;
   z-index: 100;
 }
-//.parallax__layer--base {
-//  @include parallax(0);
-//  z-index: -1;
-//}
-//.parallax__layer--back {
-//  @include parallax(-0.5);
-//  z-index: -1;
-//}
-//.parallax__layer--deep {
-//  @include parallax(-1);
-//  z-index: -1;
-//}
-//.parallax__layer--deeper {
-//  @include parallax(-1.5);
-//  z-index: -1;
-//}
-//.parallax__layer--deepest {
-//  @include parallax(-2);
-//  z-index: -1;
-//}
+.parallax__layer--base {
+  @include parallax(0);
+  z-index: -1;
+}
+.parallax__layer--back {
+  @include parallax(-0.5);
+  z-index: -1;
+}
+.parallax__layer--deep {
+  @include parallax(-1);
+  z-index: -1;
+}
+.parallax__layer--deeper {
+  @include parallax(-1.5);
+  z-index: -1;
+}
+.parallax__layer--deepest {
+  @include parallax(-2);
+  z-index: -1;
+}
 #agenda {
   z-index: 100;
 }

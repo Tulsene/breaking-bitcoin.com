@@ -263,23 +263,23 @@ header.masthead .background__layer {
 }
 /* line 18, ../scss/_masthead.scss */
 header.masthead .parallax__layer--deepest {
-  background-image: url("../img/deepest.png");
+  background-image: url("../img/deepest.svg");
 }
 /* line 21, ../scss/_masthead.scss */
 header.masthead .parallax__layer--deeper {
-  background-image: url("../img/deeper.png");
+  background-image: url("../img/deeper.svg");
 }
 /* line 24, ../scss/_masthead.scss */
 header.masthead .parallax__layer--deep {
-  background-image: url("../img/deep.png");
+  background-image: url("../img/deep.svg");
 }
 /* line 27, ../scss/_masthead.scss */
 header.masthead .parallax__layer--back {
-  background-image: url("../img/back.png");
+  background-image: url("../img/back.svg");
 }
 /* line 30, ../scss/_masthead.scss */
 header.masthead .parallax__layer--base {
-  background-image: url("../img/base.png");
+  background-image: url("../img/base.svg");
 }
 /* line 33, ../scss/_masthead.scss */
 header.masthead .header-content {
@@ -351,7 +351,7 @@ header.masthead .header-content .header-content-inner a {
 
 /* line 1, ../scss/_venue.scss */
 #venue {
-  background-image: url(../img/lecture-hall-dark.png);
+  background-image: url(../img/lecture-hall-dark.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -375,6 +375,12 @@ header.masthead .header-content .header-content-inner a {
   left: 0;
   width: 100% !important;
   height: 100% !important;
+}
+
+/* line 1, ../scss/_sponsors.scss */
+.chainsmiths {
+  background-image: url("../img/logochain.png");
+  height: 80px;
 }
 
 @font-face {
@@ -541,23 +547,104 @@ header.masthead .header-content .header-content-inner a {
   padding: 15px 30px;
 }
 
-/* line 68, ../scss/_parallax.scss */
+@-moz-document url-prefix() {
+  /* line 11, ../scss/_parallax.scss */
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  /* line 19, ../scss/_parallax.scss */
+  body {
+    overflow: auto;
+    perspective: 1px;
+    transform-style: preserve-3d;
+  }
+  /* line 28, ../scss/_parallax.scss */
+  body, body * {
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+  }
+}
+/* line 50, ../scss/_parallax.scss */
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* line 56, ../scss/_parallax.scss */
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 64, ../scss/_parallax.scss */
+.parallax__group {
+  position: relative;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+/* line 70, ../scss/_parallax.scss */
 section {
   position: relative;
   z-index: 100;
 }
 
-/* line 92, ../scss/_parallax.scss */
+/* line 74, ../scss/_parallax.scss */
+.parallax__layer--base {
+  transform: translateZ(0px) scale(1);
+  z-index: 0;
+  z-index: -1;
+}
+
+/* line 78, ../scss/_parallax.scss */
+.parallax__layer--back {
+  transform: translateZ(-0.5px) scale(1.5);
+  z-index: -500;
+  z-index: -1;
+}
+
+/* line 82, ../scss/_parallax.scss */
+.parallax__layer--deep {
+  transform: translateZ(-1px) scale(2);
+  z-index: -1000;
+  z-index: -1;
+}
+
+/* line 86, ../scss/_parallax.scss */
+.parallax__layer--deeper {
+  transform: translateZ(-1.5px) scale(2.5);
+  z-index: -1500;
+  z-index: -1;
+}
+
+/* line 90, ../scss/_parallax.scss */
+.parallax__layer--deepest {
+  transform: translateZ(-2px) scale(3);
+  z-index: -2000;
+  z-index: -1;
+}
+
+/* line 94, ../scss/_parallax.scss */
 #agenda {
   z-index: 100;
 }
 
-/* line 96, ../scss/_parallax.scss */
+/* line 98, ../scss/_parallax.scss */
 .parallax {
   perspective-origin-x: 100%;
 }
 
-/* line 99, ../scss/_parallax.scss */
+/* line 101, ../scss/_parallax.scss */
 .parallax__layer {
   transform-origin-x: 100%;
 }
