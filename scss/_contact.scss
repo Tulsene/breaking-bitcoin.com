@@ -17,13 +17,18 @@
     background-color: $theme-color-2;
   }
 }
+
 .domain {
   font-size: 24px;
   font-weight: bold;
   color: black;
-  position: absolute;
-  top: 50%; left: 5%;
-  transform: translate(0,-50%);
+  display: inline-block;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 50%; left: 5%;
+    transform: translate(0,-50%);
+  }
 }
 .nounderline {
   text-decoration: none !important;

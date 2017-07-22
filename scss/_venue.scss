@@ -6,12 +6,15 @@
 }
 .google-maps {
     position: relative;
-    padding-bottom: 40%; // This is the aspect ratio
+    padding-bottom: 100%; // This is the aspect ratio
     height: 0;
     overflow: hidden;
     max-width: 600px;
     max-height: 450px;
     margin: 0 auto;
+    @media (min-width: 768px) {
+      padding-bottom: 40%;
+    }
 }
 .google-maps iframe {
     position: absolute;
