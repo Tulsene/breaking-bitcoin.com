@@ -91,9 +91,7 @@ section {
   @include parallax(-2);
   z-index: -1;
 }
-#agenda {
-  z-index: 100;
-}
+
 //Webkit fix
 .parallax {
   perspective-origin-x: 100%;

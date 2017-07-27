@@ -52,28 +52,28 @@
             <div class="collapse navbar-collapse" id="navbarExample">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" onclick="scrollDownTo('#about')">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#agenda">Agenda</a>
+                        <a class="nav-link" onclick="scrollDownTo('#agenda')">Agenda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#tickets">Tickets</a>
+                        <a class="nav-link" onclick="scrollDownTo('#tickets')">Tickets</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#venue">Venue</a>
+                        <a class="nav-link" onclick="scrollDownTo('#venue')">Venue</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#sponsors">Sponsors</a>
+                        <a class="nav-link" onclick="scrollDownTo('#sponsors')">Sponsors</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Us</a>
+                        <a class="nav-link" onclick="scrollDownTo('#contact')">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="parallax">
+    <div class="parallax" id="scrollfix">
     <header class="masthead">
         <div class="background__layer parallax-window parallax__layer parallax__layer--deepest"></div>
         <div class="background__layer parallax__layer parallax__layer--deeper"></div>
@@ -270,6 +270,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+    <script src="js/scroll-fix.js"></script>
 
 </body>
 

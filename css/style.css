@@ -673,17 +673,12 @@ section {
   z-index: -1;
 }
 
-/* line 94, ../scss/_parallax.scss */
-#agenda {
-  z-index: 100;
-}
-
-/* line 98, ../scss/_parallax.scss */
+/* line 96, ../scss/_parallax.scss */
 .parallax {
   perspective-origin-x: 100%;
 }
 
-/* line 101, ../scss/_parallax.scss */
+/* line 99, ../scss/_parallax.scss */
 .parallax__layer {
   transform-origin-x: 100%;
 }
