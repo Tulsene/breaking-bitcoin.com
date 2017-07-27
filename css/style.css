@@ -175,14 +175,15 @@ body {
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
   color: #F78000;
+  cursor: pointer;
 }
-/* line 35, ../scss/_navbar.scss */
+/* line 36, ../scss/_navbar.scss */
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
   color: #F78000 !important;
   background-color: transparent;
 }
-/* line 38, ../scss/_navbar.scss */
+/* line 39, ../scss/_navbar.scss */
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
   background-color: transparent;
@@ -192,48 +193,48 @@ body {
   #mainNav {
     border-color: rgba(255, 255, 255, 0.3);
   }
-  /* line 47, ../scss/_navbar.scss */
+  /* line 48, ../scss/_navbar.scss */
   #mainNav .navbar-brand {
     color: #FFF;
   }
-  /* line 49, ../scss/_navbar.scss */
+  /* line 50, ../scss/_navbar.scss */
   #mainNav .navbar-brand img {
     max-height: 60px;
   }
-  /* line 52, ../scss/_navbar.scss */
+  /* line 53, ../scss/_navbar.scss */
   #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
     color: #222222;
   }
-  /* line 57, ../scss/_navbar.scss */
+  /* line 58, ../scss/_navbar.scss */
   #mainNav .navbar-nav > li.nav-item > a.nav-link,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
     color: #FFF;
   }
-  /* line 60, ../scss/_navbar.scss */
+  /* line 61, ../scss/_navbar.scss */
   #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
     color: rgba(255, 255, 255, 0.7);
   }
-  /* line 64, ../scss/_navbar.scss */
+  /* line 65, ../scss/_navbar.scss */
   #mainNav.navbar-shrink {
     border-color: rgba(34, 34, 34, 0.05);
     background-color: #222222;
   }
-  /* line 67, ../scss/_navbar.scss */
+  /* line 68, ../scss/_navbar.scss */
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 16px;
     color: #FFF;
   }
-  /* line 70, ../scss/_navbar.scss */
+  /* line 71, ../scss/_navbar.scss */
   #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
     color: #f68000;
   }
-  /* line 75, ../scss/_navbar.scss */
+  /* line 76, ../scss/_navbar.scss */
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
     color: #FFF;
   }
-  /* line 78, ../scss/_navbar.scss */
+  /* line 79, ../scss/_navbar.scss */
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
     color: #f68000;
