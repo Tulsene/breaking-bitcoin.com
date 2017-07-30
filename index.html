@@ -5,8 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Breaking Bitcoin">
-    <meta name="author" content="Ilya Kiselev">
+    <meta name="description" content="Breaking bitcoin is an event taking place in Paris, focusing on security of Bitcoin and everything around it.">
 
     <title>Breaking Bitcoin Conference</title>
 
@@ -30,7 +29,7 @@
     .navbar-toggler {
         z-index: 1;
     }
-    
+
     @media (max-width: 576px) {
         nav > .container {
             width: 100%;
@@ -84,11 +83,53 @@
                 <div class="header-content-inner">
                   <div class="row">
                     <div class="col-md-5"></div>
-                    <div class="col-md-7">
-                        <h1 id="homeHeading">Breaking Bitcoin <h2>Conference</h2></h1>
+                    <div class="col-md-7" itemscope itemtype="http://schema.org/Event">
+                        <h1 id="homeHeading" itemprop="name">Breaking Bitcoin <h2>Conference</h2></h1>
                         <hr>
-                        <h2>Paris 9-10 Sep 2017</h2>
-                        <!-- <a href="https://ti.to/breaking-bitcoin/breaking-bitcoin" class="btn btn-primary btn-xl mt-4">Book Tickets</a> don't work with paralax ... --> 
+                        <h2 itemprop="startDate" content="2017-09-09T09:00">Paris 9-10 Sep 2017</h2>
+                        <!-- <a href="https://ti.to/breaking-bitcoin/breaking-bitcoin" class="btn btn-primary btn-xl mt-4">Book Tickets</a> don't work with paralax ... -->
+                        <!-- Start : Metadatas -->
+                        <div style="display:none;">
+                            <section id="metalocation" itemprop="location" itemscope itemtype="http://schema.org/Place">
+                              <span itemprop="name">Breaking Bitcoin Center</span>
+                                <div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                  <span itemprop="streetAddress">16 Rue Jean Rey</span><br>
+                                  <span itemprop="addressLocality">Paris</span>,
+                                  <span itemprop="postalCode">75015</span>
+                                  <span itemprop="addressCountry">France</span>
+                                </div>
+                            </section>
+                            <section id="metaprices">
+                                <p>Prices:</p>
+                                  <ul>
+                                    <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                      <a itemprop="url" href="https://ti.to/breaking-bitcoin/breaking-bitcoin#student">
+                                        <span itemprop="name" content="Students">Students</span>
+                                        <span itemprop="price" content="100.00">
+                                          <span itemprop="priceCurrency" content="EUR">100€</span>
+                                        </span>
+                                      </a>
+                                    </li>
+                                    <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                      <a itemprop="url" href="https://ti.to/breaking-bitcoin/breaking-bitcoin#normal">
+                                        <span itemprop="name" content="Normal Ticket">Normal Ticket</span>
+                                        <span itemprop="price" content="150.00">
+                                          <span itemprop="priceCurrency" content="EUR">150€</span>
+                                        </span>
+                                      </a>
+                                    </li>
+                                    <li itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                                      <a itemprop="url" href="https://ti.to/breaking-bitcoin/breaking-bitcoin#normal">
+                                        <span itemprop="name" content="Corporate Ticket">Corporate Ticket</span>
+                                        <span itemprop="price" content="250.00">
+                                          <span itemprop="priceCurrency" content="EUR">250€</span>
+                                        </span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                            </section>
+                        </div>
+                        <!-- Stop : Metadatas -->
                     </div>
                   </div>
                 </div>
@@ -102,7 +143,7 @@
                     <h2 class="section-heading text-black">About</h2>
                     <hr class="invert">
                     <p class="text-black">Breaking bitcoin is an event for the technical community focusing on security of Bitcoin and everything around it.</p>
-                    <p class="text-black"> The presentations will be technical, presenting practical or theoretical attacks or vulnerabilities on the network, the users, or other resources.</p>
+                    <p class="text-black">The presentations will be technical, presenting practical or theoretical attacks or vulnerabilities on the network, the users, or other resources.</p>
                     <p class="text-black">This event is geared toward people with knowledge of the technical aspects of bitcoin or security in general</p>
                 </div>
             </div>
@@ -154,6 +195,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 text-center">
+                  <div id="confirmed-speakers">
                     <p>Elizabeth Stark</p>
                     <p>Fabrice Drouin</p>
                     <p>Nicolas Bacca</p>
@@ -161,7 +203,8 @@
                     <p>Peter Todd</p>
                     <p>Renaud Lifchitz</p>
                     <p>Thomas Voegtlin</p>
-                    <p>More to come ...</p>
+                  </div>
+                  <a href="mailto:contact@breaking-bitcoin.com" class="btn btn-primary btn-xl mt-4">More to come...</a>
                 </div>
             </div>
         </div>
@@ -173,13 +216,13 @@
                     <h2 class="section-heading text-black">Tickets</h2>
                     <hr class="invert">
                     <p class="text-black">
-                        <b>€100</b> for students 
+                        <b>€100</b> for students
                         <br><br>
                         <b>€150</b> Individual or startup
                         <br><br>
                         <b>€250</b> Regular business/corporate
                         <br><br>
-                        For those who want to pay in Bitcoin and Students, you <b>must</b> contact us at 
+                        For those who want to pay in Bitcoin and Students, you <b>must</b> contact us at
                         <br>
                         <b>contact@breaking-bitcoin.com</b>
                     </p>
@@ -229,7 +272,7 @@
             </div>
         </div>
     </section>
-      
+
     <section id="contact" class= "bg-dark">
         <div class="container">
             <div class="row">
@@ -251,7 +294,7 @@
                               <a class="nounderline" href="mailto:sponsors@breaking-bitcoin.com?Subject=Conference%20Sponsorship"><h5 class="code color-1" >sponsors</h5></a>
                             </div>
                         </div>
-                        
+
                         <div class="row">
                             <div class="col-lg-8 col-xs-6 text-center">
                               <h4 class="pull-right">Contact us:</h4>
@@ -298,10 +341,10 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
     </div>
 
-  
+
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
