@@ -400,6 +400,16 @@ header.masthead .header-content .header-content-inner a {
   max-width: 80%;
 }
 
+/* line 1, ../scss/_sponsors.scss */
+.chaintech {
+  display: inline-block;
+  max-width: 90%;
+}
+/* line 4, ../scss/_sponsors.scss */
+.chaintech img {
+  max-width: 90%;
+}
+
 @font-face {
   font-family: "Source Code Pro";
   font-style: ttf otf;
