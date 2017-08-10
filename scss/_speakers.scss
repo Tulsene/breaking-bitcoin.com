@@ -1,17 +1,22 @@
 #confirmed-speakers {
+  padding-left: 0;
   li {
     display: inline-block;
     margin: 10px;
     width: 200px;
-    height: 260px;
+    height: 280px;
     overflow: hidden;
+    > img {
+      margin-bottom: 8px;
+    }
     .name {
       font-weight: bold;
       display: block;
     }
     .role {
       display: block;
-      font-size: 0.8em;
+      font-size: 0.9em;
+      margin-bottom: 2px;
     }
     .more {
       font-weight: bold;

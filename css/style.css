@@ -416,25 +416,34 @@ header.masthead .header-content .header-content-inner a {
   height: 100% !important;
 }
 
-/* line 2, ../scss/_speakers.scss */
+/* line 1, ../scss/_speakers.scss */
+#confirmed-speakers {
+  padding-left: 0;
+}
+/* line 3, ../scss/_speakers.scss */
 #confirmed-speakers li {
   display: inline-block;
   margin: 10px;
   width: 200px;
-  height: 260px;
+  height: 280px;
   overflow: hidden;
 }
-/* line 8, ../scss/_speakers.scss */
+/* line 9, ../scss/_speakers.scss */
+#confirmed-speakers li > img {
+  margin-bottom: 8px;
+}
+/* line 12, ../scss/_speakers.scss */
 #confirmed-speakers li .name {
   font-weight: bold;
   display: block;
 }
-/* line 12, ../scss/_speakers.scss */
+/* line 16, ../scss/_speakers.scss */
 #confirmed-speakers li .role {
   display: block;
-  font-size: 0.8em;
+  font-size: 0.9em;
+  margin-bottom: 2px;
 }
-/* line 16, ../scss/_speakers.scss */
+/* line 21, ../scss/_speakers.scss */
 #confirmed-speakers li .more {
   font-weight: bold;
   font-size: 0.8em;
