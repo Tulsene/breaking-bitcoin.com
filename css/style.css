@@ -416,6 +416,30 @@ header.masthead .header-content .header-content-inner a {
   height: 100% !important;
 }
 
+/* line 2, ../scss/_speakers.scss */
+#confirmed-speakers li {
+  display: inline-block;
+  margin: 10px;
+  width: 200px;
+  height: 260px;
+  overflow: hidden;
+}
+/* line 8, ../scss/_speakers.scss */
+#confirmed-speakers li .name {
+  font-weight: bold;
+  display: block;
+}
+/* line 12, ../scss/_speakers.scss */
+#confirmed-speakers li .role {
+  display: block;
+  font-size: 0.8em;
+}
+/* line 16, ../scss/_speakers.scss */
+#confirmed-speakers li .more {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
 /* line 1, ../scss/_sponsors.scss */
 .chainsmiths {
   display: inline-block;

@@ -1,0 +1,21 @@
+#confirmed-speakers {
+  li {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    height: 260px;
+    overflow: hidden;
+    .name {
+      font-weight: bold;
+      display: block;
+    }
+    .role {
+      display: block;
+      font-size: 0.8em;
+    }
+    .more {
+      font-weight: bold;
+      font-size: 0.8em;
+    }
+  }
+}
