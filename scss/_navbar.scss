@@ -83,3 +83,21 @@
         }
     }
 }
+
+.navbar {
+    overflow: hidden;
+}
+
+.collapse {
+    display: block !important;
+}
+
+.navbar-toggler {
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    nav > .container {
+        width: 100%;
+    }
+}

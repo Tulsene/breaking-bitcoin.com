@@ -131,6 +131,11 @@ body {
   -webkit-tap-highlight-color: #222222;
 }
 
+/* line 109, ../scss/_global.scss */
+.parallax {
+  background: #222;
+}
+
 /* line 2, ../scss/_navbar.scss */
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
@@ -241,6 +246,27 @@ body {
   }
 }
 
+/* line 87, ../scss/_navbar.scss */
+.navbar {
+  overflow: hidden;
+}
+
+/* line 91, ../scss/_navbar.scss */
+.collapse {
+  display: block !important;
+}
+
+/* line 95, ../scss/_navbar.scss */
+.navbar-toggler {
+  z-index: 1;
+}
+
+@media (max-width: 576px) {
+  /* line 100, ../scss/_navbar.scss */
+  nav > .container {
+    width: 100%;
+  }
+}
 /* line 2, ../scss/_masthead.scss */
 header.masthead {
   position: relative;
@@ -398,16 +424,6 @@ header.masthead .header-content .header-content-inner a {
 /* line 4, ../scss/_sponsors.scss */
 .chainsmiths img {
   max-width: 80%;
-}
-
-/* line 1, ../scss/_sponsors.scss */
-.chaintech {
-  display: inline-block;
-  max-width: 90%;
-}
-/* line 4, ../scss/_sponsors.scss */
-.chaintech img {
-  max-width: 90%;
 }
 
 @font-face {

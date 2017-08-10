@@ -22,20 +22,6 @@
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
-    <link rel="icon" href="img/favico.ico">
-
-    <!-- Temporary navbar container fix -->
-    <style>
-    .navbar-toggler {
-        z-index: 1;
-    }
-
-    @media (max-width: 576px) {
-        nav > .container {
-            width: 100%;
-        }
-    }
-    </style>
 
 </head>
 
@@ -43,12 +29,12 @@
 
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse" id="mainNav">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="container">
             <a class="navbar-brand" href="#page-top"><img src="img/Logo_horiz_white.png" alt="Breaking Bitcoin"></a>
-            <div class="collapse navbar-collapse" id="navbarExample">
+            <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link" onclick="scrollDownTo('#about')">About</a>
@@ -267,18 +253,15 @@
                 <div class="col-lg-8 col-md-8 offset-lg-2 text-center">
                     <h2 class="section-heading text-black">Organizers</h2>
                     <hr class="invert">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 offset-lg-3">
-                    <a class="chainsmiths" href="https://www.cryptofr.com/">
-                        <img src="img/sponsors/cryptofr.png" alt="Cryptofr.com">
-                    </a>
-                </div>
-                <div class="col-lg-4">
-                    <a class="chaintech" href="https://www.chaintech.fr/">
-                        <img src="img/sponsors/chaintech.png" alt="La Chaintech">
-                    </a>
+                    <div class="container mt-5 mb-3" >
+                        <a class="chainsmiths" href="https://www.cryptofr.com/">
+                            <img src="img/sponsors/cryptofr.png" alt="Cryptofr.com">
+                        </a>
+                        <br><br>
+                        <a class="chaintech" href="https://www.chaintech.fr/">
+                            <img src="img/sponsors/chaintech.png" alt="La Chaintech">
+                        </a>
+                    </div>
                 </div>
             </div>
             <br><br>
@@ -298,7 +281,6 @@
                       </a>
                     </div>
                     <a href="sponsors/sponsoring_pack.pdf" class="btn btn-primary btn-xl mt-4" type="application/pdf">Become a sponsor</a>
-
                 </div>
             </div>
             <br><br>
@@ -306,18 +288,14 @@
                 <div class="col-lg-8 col-md-8 offset-lg-2 text-center">
                     <h2 class="section-heading text-black">Medias</h2>
                     <hr class="invert">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 offset-lg-3">
-                    <a class="chainsmiths" href="https://distributed.com/">
-                        <img src="img/sponsors/distributed-dark.png" alt="Distributed">
-                    </a>
-                </div>
-                <div class="col-lg-4">
-                    <a class="chainsmiths" href="https://bitcoin.fr/">
-                        <img src="img/sponsors/bitcoinfr.png" alt="bitcoin.fr">
-                    </a>
+                    <div class="container mt-5 mb-3" >
+                        <a class="chainsmiths" href="https://distributed.com/">
+                            <img src="img/sponsors/distributed-dark.png" alt="Distributed">
+                        </a>
+                        <a class="chainsmiths" href="https://bitcoin.fr/">
+                            <img src="img/sponsors/bitcoinfr.png" alt="bitcoin.fr">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -400,11 +378,6 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/tether/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
