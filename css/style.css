@@ -31,7 +31,9 @@ hr.light {
 hr.invert {
   border-color: #087fff;
 }
-
+.separator {
+  padding-top:67px
+}
 /* line 27, ../scss/_global.scss */
 a {
   color: #F78000;
@@ -749,4 +751,25 @@ section {
 /* line 99, ../scss/_parallax.scss */
 .parallax__layer {
   transform-origin-x: 100%;
+}
+
+
+a.sponsor {
+  background: #222;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 1);
+  cursor:hand;
+}
+
+a.sponsor:hover {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  -moz-transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;}
+}
+a.sponsor:hover img{
+  opacity:0.9;
+  -moz-transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
 }
