@@ -69,6 +69,11 @@ p {
   z-index: 10;
   color: #000 !important;
 }
+.bg-blue {
+  background-color: #232333 !important;
+  z-index: 10;
+  color: #FFF !important;
+}
 
 /* line 57, ../scss/_global.scss */
 .bg-primary {
@@ -140,8 +145,8 @@ body {
 
 /* line 2, ../scss/_navbar.scss */
 #mainNav {
-  border-color: rgba(34, 34, 34, 0.05);
-  background-color: rgba(34, 34, 34, 0.8);
+  border-color: rgba(35, 35, 51, 0.05);
+  background-color: rgba(35, 35, 51, 0.8);
   font-family: 'Helvetica Neue', 'Open Sans', Arial, sans-serif;
   -webkit-transition: all .2s;
   -moz-transition: all .2s;
