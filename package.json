@@ -1,20 +1,19 @@
 {
-    "name": "breakingbitcoin",
-    "version": "0.1.0",
-    "description": "Website for the Paris conference",
-    "main": "server.js",
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/tulsene/breaking-bitcoin"
-    },
-    "dependencies": {
-      "gulp": "*",
-      "gulp-sass": "*",
-      "browser-sync": "*"
-    },
-    "scripts": {
-      "dev": "gulp",
-      "test": "echo \"No tests\" && exit 0"
-    }
+  "name": "breakingbitcoin",
+  "version": "0.1.0",
+  "description": "Website for the Paris conference",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tulsene/breaking-bitcoin"
+  },
+  "dependencies": {
+    "gulp": "^3",
+    "gulp-sass": "*",
+    "browser-sync": "*"
+  },
+  "scripts": {
+    "dev": "gulp",
+    "test": "echo \"No tests\" && exit 0"
   }
-  
+}
