@@ -1,7 +1,7 @@
 // Styling for the navbar
 #mainNav {
     border-color: fade-out($gray-darker, .95);
-    background-color: rgba($gray-darker, 0.8);
+    background-color: rgba($gray-base, 0.6);
     @include sans-serif-font;
     @include transition-all;
     .navbar-brand {
@@ -19,6 +19,7 @@
     }
     .navbar-toggler {
       margin-top: 5px;
+      cursor:pointer;
     }
     .navbar-nav {
         > li.nav-item {
@@ -26,7 +27,7 @@
             > a.nav-link,
             > a.nav-link:focus {
                 font-size: 13px;
-                font-weight: 400;
+                font-weight: 700;
                 text-transform: uppercase;
                 color: #FFF;
                 &:hover {
@@ -64,7 +65,7 @@
         }
         &.navbar-shrink {
             border-color: fade-out($gray-darker, .95);
-            background-color: $gray-darker;
+            background-color: rgba($gray-darker, 0.6);
             .navbar-brand {
                 font-size: 16px;
                 color: #FFF;
@@ -87,9 +88,12 @@
 .navbar {
     overflow: hidden;
 }
-
 .collapse {
-    display: block !important;
+    display:none;
+}
+.collapse.in {
+    height:100%;
+    display:block
 }
 
 .navbar-toggler {
@@ -100,4 +104,6 @@
     nav > .container {
         width: 100%;
     }
+
+
 }
