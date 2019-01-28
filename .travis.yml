@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+- node
+deploy:
+  provider: s3
+  access_key_id: AKIAJV5CKRQXPOH2DQFA
+  secret_access_key:
+    secure: DQwIZUcmDzR7Hh4QfuEyJctmx2QPS4RebU+GKU0VoLvz2TBVQJzT5ggojN9WzfRredtpGH92Tu/0WPH6pFDBOZetbuDrEYWcIm6SnMqDTHfIbGlVHTf/kIKJ5ooUdjagnUR7qZsDDYDHZ2dyrQABFENnT1VcL9/tZZ/CiQI50jjvt+xy9aleAX03UDeGEf/uNGHo/0sZW4tOAbUDYvh/Sfhx0xZK7jhMQSe1g/0A1qXtkl9TSDObDr7LyB8EL1PvnmzISr+Rx8ygWSculzGwAPxlNJy7Kg5ledNvxOleJDz60nYgHpsiIjDWvI6S6hPXdaYOn7uCr9z2E6/rNv5id9iIoEASkri6KYtYYByKcYRy3/5S9XLzs3r2NnAo8G9B2/lJX2rx+9bIZUbsDJ+Ac4mi3lQaXeydYzzRQjyhlVQ0vGzqRiL/1rozNXLvSRJWvSBcNer+gdYCPFK3e38gr0qAiVtWmWW1Kb6mEaC5H45GAZLXH3IGXM0mzi40+5Xt3K60Cd2BatqyCtw7T37ZTtT+thZKxPefqEo277Br7HPJ91og7nLFB3HFGkk5HkzeZmtjnf3GiIU+VS8+GtiN1XS51+wW68GdKFrAXwqgEMWNYmlcXngJSikJlV4OOAEUDwGU2O4Sn2GfiAW3E4z8PyqFdggY69I4ACrH2ylg2Ug=
+  bucket: breaking-bitcoin
+  region: eu-west-1
+  acl: public_read
