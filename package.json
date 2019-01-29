@@ -8,9 +8,9 @@
     "url": "https://github.com/tulsene/breaking-bitcoin"
   },
   "dependencies": {
-    "gulp": "^3",
-    "gulp-sass": "*",
-    "browser-sync": "*"
+    "browser-sync": "*",
+    "gulp": "^4.0.0",
+    "gulp-sass": "*"
   },
   "scripts": {
     "dev": "gulp",
