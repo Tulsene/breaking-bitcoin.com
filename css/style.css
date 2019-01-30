@@ -257,10 +257,13 @@ header.masthead {
             margin-left: auto; } }
 
 #venue {
-  background-image: url(../img/venue.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
+  #venue.venue2017{
+    background-image: url(../img/2017/venue.jpg);}
+  #venue.venue2019{
+    background-image: url(../img/venue.jpg); }
 
 .google-maps {
   position: relative;
