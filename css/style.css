@@ -59,6 +59,7 @@ p {
   background-color: #221e3c !important;
   z-index: 10; }
 
+
 .text-faded {
   color: rgba(255, 255, 255, 0.7); }
 
@@ -94,7 +95,7 @@ body {
 
 #mainNav {
   border-color: rgba(34, 30, 60, 0.05);
-  background-color: rgba(8, 7, 14, 0.6);
+  background-color: rgba(34, 30, 60, 0.6);
   font-family: 'Helvetica Neue', 'Open Sans', Arial, sans-serif;
   -webkit-transition: all .2s;
   -moz-transition: all .2s;
@@ -174,6 +175,8 @@ body {
   z-index: 1; }
 
 @media (max-width: 576px) {
+  body {
+    background-color: #221e3c; }
   nav > .container {
     width: 100%; } }
 
