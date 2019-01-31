@@ -330,6 +330,10 @@ header.masthead {
   .organizers img {
     max-width: 80px; }
 
+@media (max-width: 576px) {
+  .organizers img {
+    margin-bottom: 20px; } }
+
 @font-face {
   font-family: "Source Code Pro";
   font-style: ttf otf;

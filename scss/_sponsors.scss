@@ -5,3 +5,12 @@
     max-width: 80px;
   }
 }
+
+@media (max-width: 576px) {
+  .organizers {
+    img {
+      margin-bottom:20px;
+    }
+  }
+
+}
