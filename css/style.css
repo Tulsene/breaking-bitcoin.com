@@ -56,9 +56,8 @@ p {
 
 .bg-blue {
   color: #f7f7fb;
-  background-color: #221e3c !important;
+  background-color: #222222 !important;
   z-index: 10; }
-
 
 .text-faded {
   color: rgba(255, 255, 255, 0.7); }
@@ -95,7 +94,7 @@ body {
 
 #mainNav {
   border-color: rgba(34, 30, 60, 0.05);
-  background-color: rgba(34, 30, 60, 0.6);
+  background-color: rgba(8, 7, 14, 0.6);
   font-family: 'Helvetica Neue', 'Open Sans', Arial, sans-serif;
   -webkit-transition: all .2s;
   -moz-transition: all .2s;
@@ -158,7 +157,7 @@ body {
         #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
           color: #FFF; }
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
-          #mainNav.navbar-shrink .navbar-nav > .nav-item > a.nav-link:focus:hover {
+          #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
             color: #f68000; } }
 
 .navbar {
@@ -173,6 +172,10 @@ body {
 
 .navbar-toggler {
   z-index: 1; }
+
+@media (max-width: 576px) {
+  nav > .container {
+    width: 100%; } }
 
 header.masthead {
   position: relative;
@@ -254,10 +257,6 @@ header.masthead {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
-  #venue.venue2017{
-    background-image: url(../img/2017/venue.jpg);}
-  #venue.venue2019{
-    background-image: url(../img/venue.jpg); }
 
 .google-maps {
   position: relative;
@@ -278,46 +277,39 @@ header.masthead {
   width: 100% !important;
   height: 100% !important; }
 
-#speakers {
+#confirmed-speakers {
   padding-left: 0; }
-  #speakers li {
+  #confirmed-speakers li {
     display: inline-block;
     margin: 10px;
     width: 200px;
     height: 280px;
     overflow: hidden; }
-    #speakers li > img {
+    #confirmed-speakers li > img {
       margin-bottom: 8px;
       filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
       filter: gray;
       -webkit-filter: grayscale(100%);
       transition: all .333s ease; }
-      #speakers li > img:hover {
+      #confirmed-speakers li > img:hover {
         filter: none;
-        -webkit-filter: grayscale(0%);
-        max-width: 180px;
-        max-height: 180px; }
-        #speakers li > a {
-          text-decoration:none !important; }
-    #speakers li .name {
+        -webkit-filter: grayscale(0%); }
+    #confirmed-speakers li .name {
       font-weight: bold;
       display: block; }
-    #speakers li .role {
+    #confirmed-speakers li .role {
       display: block;
       font-size: 0.9em;
       margin-bottom: 2px; }
-    #speakers li .more {
+    #confirmed-speakers li .more {
       font-weight: bold;
       font-size: 0.8em; }
 
-.google-maps{
-  margin-top: 20px; }
-
-.organizers {
+.chainsmiths {
   display: inline-block;
   max-width: 80%; }
-  .organizers img {
-    max-width: 80px; }
+  .chainsmiths img {
+    max-width: 80%; }
 
 @font-face {
   font-family: "Source Code Pro";
@@ -563,32 +555,8 @@ header.masthead {
 .layer-overlay {
   background-image: url("../img/back.svg"); }
 
-@media (max-width: 576px) {
-  body {
-    background-color: #221e3c; }
-  nav > .container {
-    width: 100%; } }
-
-@media only screen and (max-width: 767.98px) {
+@media only screen and (max-width: 768px) {
   #hero {
     display: none; }
   #hero-mobile {
-    display: block; } }
-
-@media only screen and (max-width: 991.98px) {
-  .md-mbot-twenty {
-    margin-bottom: 20px; }
-  .md-mtop-zero {
-    margin-top: 0px; }
-  .md-mbot-zero {
-    margin-bottom: 0px; }
-  .md-hide {
-    display:none; }
-  .lg-hide {
-    display: block; } }
-
-@media only screen and (min-width: 992px) {
-  .lg-hide {
-    display:none; }
-  .md-hide {
     display: block; } }
