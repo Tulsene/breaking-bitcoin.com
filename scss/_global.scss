@@ -111,3 +111,24 @@ body {
     -webkit-tap-highlight-color: $gray-darker;
 }
 
+@media (max-width: 576px) {
+    body {
+      background-color: #221e3c; 
+    }
+    nav > .container {
+      width: 100%;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .md-mbot-twenty {
+      margin-bottom: 20px;
+    }
+    .md-mtop-zero {
+      margin-top: 0px;
+    }
+    .md-mbot-zero {
+      margin-bottom: 0px;
+    }
+}
