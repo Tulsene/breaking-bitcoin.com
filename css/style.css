@@ -92,6 +92,20 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: #221e3c; }
 
+@media (max-width: 576px) {
+  body {
+    background-color: #221e3c; }
+  nav > .container {
+    width: 100%; } }
+
+@media (max-width: 992px) {
+  .md-mbot-twenty {
+    margin-bottom: 20px; }
+  .md-mtop-zero {
+    margin-top: 0px; }
+  .md-mbot-zero {
+    margin-bottom: 0px; } }
+
 #mainNav {
   border-color: rgba(34, 30, 60, 0.05);
   background-color: rgba(8, 7, 14, 0.6);
@@ -257,6 +271,10 @@ header.masthead {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
+  #venue .venue2017 {
+    background-image: url(../img/2017/venue.jpg); }
+  #venue .venue2019 {
+    background-image: url(../img/venue.jpg); }
 
 .google-maps {
   position: relative;
@@ -265,7 +283,8 @@ header.masthead {
   overflow: hidden;
   max-width: 600px;
   max-height: 450px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-top: 20px; }
   @media (min-width: 768px) {
     .google-maps {
       padding-bottom: 40%; } }
@@ -277,31 +296,31 @@ header.masthead {
   width: 100% !important;
   height: 100% !important; }
 
-#confirmed-speakers {
+#speakers {
   padding-left: 0; }
-  #confirmed-speakers li {
+  #speakers li {
     display: inline-block;
     margin: 10px;
     width: 200px;
     height: 280px;
     overflow: hidden; }
-    #confirmed-speakers li > img {
+    #speakers li > img {
       margin-bottom: 8px;
       filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
       filter: gray;
       -webkit-filter: grayscale(100%);
       transition: all .333s ease; }
-      #confirmed-speakers li > img:hover {
+      #speakers li > img:hover {
         filter: none;
         -webkit-filter: grayscale(0%); }
-    #confirmed-speakers li .name {
+    #speakers li .name {
       font-weight: bold;
       display: block; }
-    #confirmed-speakers li .role {
+    #speakers li .role {
       display: block;
       font-size: 0.9em;
       margin-bottom: 2px; }
-    #confirmed-speakers li .more {
+    #speakers li .more {
       font-weight: bold;
       font-size: 0.8em; }
 
