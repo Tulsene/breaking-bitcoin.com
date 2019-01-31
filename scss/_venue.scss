@@ -2,12 +2,13 @@
   background-repeat: no-repeat; 
   background-size: cover;
   background-position: center;
-  .venue2017{
-    background-image: url(../img/2017/venue.jpg);
-  }
-  .venue2019{
-    background-image: url(../img/venue.jpg);
-  }
+}
+.venue2017{
+  background-image: url(/img/2017/venue.jpg);
+}
+
+.venue2019{
+  background-image: url(/img/venue.jpg);
 }
 .google-maps {
     position: relative;

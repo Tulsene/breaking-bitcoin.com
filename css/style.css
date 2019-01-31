@@ -108,7 +108,7 @@ body {
 
 #mainNav {
   border-color: rgba(60, 53, 106, 0.05);
-  background-color: rgba(34, 30, 60, 0.6);
+  background-color: #221e3c;
   font-family: 'Helvetica Neue', 'Open Sans', Arial, sans-serif;
   -webkit-transition: all .2s;
   -moz-transition: all .2s;
@@ -161,7 +161,7 @@ body {
           color: rgba(255, 255, 255, 0.7); }
       #mainNav.navbar-shrink {
         border-color: rgba(60, 53, 106, 0.05);
-        background-color: rgba(60, 53, 106, 0.6); }
+        background-color: rgba(34, 30, 60, 0.6); }
         #mainNav.navbar-shrink .navbar-brand {
           font-size: 16px;
           color: #FFF; }
@@ -271,10 +271,12 @@ header.masthead {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
-  #venue .venue2017 {
-    background-image: url(../img/2017/venue.jpg); }
-  #venue .venue2019 {
-    background-image: url(../img/venue.jpg); }
+
+.venue2017 {
+  background-image: url(/img/2017/venue.jpg); }
+
+.venue2019 {
+  background-image: url(/img/venue.jpg); }
 
 .google-maps {
   position: relative;
