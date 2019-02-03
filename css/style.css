@@ -191,6 +191,12 @@ body {
   nav > .container {
     width: 100%; } }
 
+.navbar-nav-svg {
+  display: inline-block;
+  max-width: 16px;
+  max-height: 16px;
+  vertical-align: text-top; }
+
 header.masthead {
   position: relative;
   width: 100%;
@@ -388,6 +394,12 @@ header.masthead {
   min-height: 30px;
   padding: 7px 0;
   text-align: center; }
+
+.footer-svg {
+  display: inline-block;
+  max-width: 24px;
+  max-height: 24px;
+  vertical-align: text-center; }
 
 .text-primary {
   color: #F78000 !important; }
