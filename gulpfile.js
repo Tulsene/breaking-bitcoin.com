@@ -4,19 +4,19 @@ var browserSync = require('browser-sync');
 
 
 gulp.task('sass', function () {
-    gulp.src('scss/*')
+    return gulp.src('scss/*')
         .pipe(sass({includePaths: ['scss']}))
         .pipe(gulp.dest('css'));
 });
 
 gulp.task('browser-sync', function() {
-    browserSync.init(["css/*.css", "js/*.js",'*.html'], {
+    return browserSync.init(["css/*.css", "js/*.js",'*.html'], {
         server: {
             baseDir: "./"
         }
     });
 });
 
-gulp.task('default', ['sass', 'browser-sync'], function () {
+gulp.task('default', gulp.series('sass', 'browser-sync', function () {
     gulp.watch("scss/*.scss", ['sass']);
-});
+}));
