@@ -1,8 +1,14 @@
 #venue {
-  background-image: url(../img/lecture-hall-dark.jpg);
   background-repeat: no-repeat; 
   background-size: cover;
   background-position: center;
+}
+.venue2017{
+  background-image: url(/img/2017/venue.jpg);
+}
+
+.venue2019{
+  background-image: url(/img/venue.jpg);
 }
 .google-maps {
     position: relative;
@@ -12,6 +18,8 @@
     max-width: 600px;
     max-height: 450px;
     margin: 0 auto;
+    margin-top: 20px; 
+
     @media (min-width: 768px) {
       padding-bottom: 40%;
     }

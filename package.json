@@ -1,0 +1,19 @@
+{
+  "name": "bb",
+  "version": "0.2.0",
+  "description": "Website for the bb events",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tulsene/breaking-bitcoin"
+  },
+  "dependencies": {
+    "browser-sync": "*",
+    "gulp": "^4.0.0",
+    "gulp-sass": "*"
+  },
+  "scripts": {
+    "dev": "gulp",
+    "test": "echo \"No tests\" && exit 0"
+  }
+}

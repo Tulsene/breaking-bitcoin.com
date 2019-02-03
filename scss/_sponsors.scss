@@ -1,7 +1,16 @@
-.chainsmiths {
+.organizers {
   display: inline-block;
-  max-width: 80%;
+  max-width: 80px;
   img {
-    max-width: 80%;
+    max-width: 80px;
   }
+}
+
+@media (max-width: 576px) {
+  .organizers {
+    img {
+      margin-bottom:20px;
+    }
+  }
+
 }

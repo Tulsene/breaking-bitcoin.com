@@ -1,5 +1,7 @@
 ### Sass template
+node_modules/
 .sass-cache/
 .idea/
 .idea
 .DS_Store
+node_modules/
