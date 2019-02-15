@@ -5,7 +5,7 @@
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tulsene/breaking-bitcoin"
+    "url": "git+https://github.com/tulsene/breaking-bitcoin.git"
   },
   "dependencies": {
     "browser-sync": "*",
@@ -14,6 +14,21 @@
   },
   "scripts": {
     "dev": "gulp",
-    "test": "echo \"No tests\" && exit 0"
-  }
+    "test": "echo \"No tests\" && exit 0",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "bugs": {
+    "url": "https://github.com/tulsene/breaking-bitcoin/issues"
+  },
+  "homepage": "https://github.com/tulsene/breaking-bitcoin#readme",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.10"
+  },
+  "author": "",
+  "license": "ISC"
 }
