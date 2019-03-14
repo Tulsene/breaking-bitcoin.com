@@ -400,6 +400,10 @@ img.media {
   .organizers img {
     margin-bottom: 20px; } }
 
+.table {
+  width: 100%;
+  max-width: 100%; }
+
 @font-face {
   font-family: "Source Code Pro";
   font-style: ttf otf;
