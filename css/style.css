@@ -279,10 +279,13 @@ header.masthead {
   background-position: center; }
 
 .venue2017 {
-  background-image: url(/img/2017/venue.jpg); }
+  background-image: url(../img/2017/venue.jpg); }
 
 .venue2019 {
-  background-image: url(/img/venue.jpg); }
+  background-image: url(../img/venue.jpg); }
+
+.venue22019 {
+  background-image: url(../img/2019/venue_2.jpg); }
 
 .google-maps {
   position: relative;
